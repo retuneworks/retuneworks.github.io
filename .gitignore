@@ -1,0 +1,14 @@
+# Publish only the official website from this mixed-use workspace.
+/*
+!/.gitignore
+!/.nojekyll
+!/index.html
+!/404.html
+!/robots.txt
+!/sitemap.xml
+!/README.md
+!/about/
+!/ai/
+!/assets/
+!/contact/
+!/instruments/
