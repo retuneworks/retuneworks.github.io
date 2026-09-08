@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>プロンプトは難しくない。ChatGPTへの「頼み方」の基本｜RETUNE WORKS AI JOURNAL</title>
+  <meta name="description" content="プロンプトとは、簡単に言えばAIへのお願いや指示です。難しい書き方を覚えなくても大丈夫。「旅行プランを考えて」から情報を少しずつ足しながら、ChatGPTの回答を自分に合ったものへ変える方法を初心者向けに紹介します。">
+  <link rel="canonical" href="https://retuneworks.github.io/ai/journal/prompt-basics/">
+  <meta property="og:title" content="プロンプトは難しくない。ChatGPTへの「頼み方」の基本｜RETUNE WORKS AI JOURNAL">
+  <meta property="og:description" content="プロンプトとは、簡単に言えばAIへのお願いや指示です。難しい書き方を覚えなくても大丈夫。「旅行プランを考えて」から情報を少しずつ足しながら、ChatGPTの回答を自分に合ったものへ変える方法を初心者向けに紹介します。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://retuneworks.github.io/ai/journal/prompt-basics/">
+  <meta property="og:image" content="https://retuneworks.github.io/assets/images/ai-journal/prompt-basics.webp">
+  <link rel="stylesheet" href="../../../assets/css/style.css">
+  <script src="../../../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="/">RETUNE WORKS<small>AI JOURNAL</small></a><button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">メニュー</button><nav class="site-nav" id="main-nav" aria-label="メインナビゲーション"><ul class="nav-list"><li><a href="/">RETUNE WORKS</a></li><li><a href="/instruments/">INSTRUMENTS</a></li><li><a href="/ai/" aria-current="page">AI</a></li><li><a href="/about/">ABOUT</a></li><li><a href="/contact/">CONTACT</a></li></ul></nav></div></header>
+  <main id="main">
+    <article>
+      <header class="article-header"><div class="wrap"><nav class="breadcrumb" aria-label="パンくずリスト"><a href="/ai/">AI</a> / <a href="/ai/journal/">AI JOURNAL</a></nav><p class="article-meta"><span class="tag">はじめてのChatGPT / 生成AIを使ってみる</span></p><h1>プロンプトは難しくない。ChatGPTへの「頼み方」の基本</h1></div></header>
+      <div class="wrap section article-body"><figure class="article-main-image"><img src="../../../assets/images/ai-journal/prompt-basics.webp" alt="ノートパソコンを見ながらノートに質問内容を整理する明るい机" width="1440" height="810" decoding="async" fetchpriority="high"></figure><p>生成AIを使い始めると、よく目にする言葉があります。</p>
+<p>**「プロンプト」**です。</p>
+<p>「良いプロンプトを書きましょう」</p>
+<p>「プロンプトの書き方が重要です」</p>
+<p>そんな説明を見ると、</p>
+<blockquote>
+<p>AIを使うには、何か特別な文章の書き方を覚えないといけないの？</p>
+</blockquote>
+<p>と思うかもしれません。</p>
+<p>でも、最初はそんなに難しく考える必要はありません。</p>
+<p>プロンプトとは、簡単に言えば、</p>
+<blockquote>
+<p><strong>AIへのお願い・指示</strong></p>
+</blockquote>
+<p>です。</p>
+<p>「今日の夕飯を考えて」</p>
+<p>「この文章を読みやすくして」</p>
+<p>「この言葉の意味を教えて」</p>
+<p>これも、すべて立派なプロンプトです。</p>
+<p>大切なのは、最初から完璧な文章を書くことではありません。</p>
+<p><strong>まず普通に頼んでみて、答えを見ながら必要な情報を足していく。</strong></p>
+<p>今回は、その方法を実際にChatGPTへ旅行プランを相談する例で見てみましょう。</p>
+<hr>
+<h2>まずは、そのまま聞いてみる</h2>
+<p>たとえば旅行へ行きたいとします。</p>
+<p>最初は、これだけでも構いません。</p>
+<h3>そのまま試せるプロンプト</h3>
+<blockquote>
+<p>旅行プランを考えて。</p>
+</blockquote>
+<p>とても簡単です。</p>
+<p>これでもChatGPTは何らかの提案をしてくれるでしょう。</p>
+<p>ただし、AIからすると、</p>
+<ul>
+<li>どこへ行くのか</li>
+<li>いつ行くのか</li>
+<li>誰と行くのか</li>
+<li>日帰りなのか宿泊なのか</li>
+<li>何を楽しみたいのか</li>
+<li>予算はいくらなのか</li>
+</ul>
+<p>が分かりません。</p>
+<p>そのため、自分が期待していたものとは違う答えになるかもしれません。</p>
+<p>ここで、</p>
+<blockquote>
+<p>「プロンプトが悪かった」</p>
+</blockquote>
+<p>と考える必要はありません。</p>
+<p><strong>AIが判断するための情報が、まだ少なかっただけです。</strong></p>
+<hr>
+<h2>情報を一つ足してみる</h2>
+<p>では、少しだけ具体的にします。</p>
+<h3>プロンプト</h3>
+<blockquote>
+<p>埼玉県から日帰りで行ける旅行プランを考えて。</p>
+</blockquote>
+<p>これだけでも、先ほどより候補を絞りやすくなります。</p>
+<p>さらに、</p>
+<blockquote>
+<p>埼玉県から車で日帰りできる旅行プランを考えて。家族4人で行きます。</p>
+</blockquote>
+<p>とすれば、</p>
+<p><strong>出発地＋移動方法＋日帰り＋人数</strong></p>
+<p>という情報が加わります。</p>
+<p>AIは、与えられた条件をもとに答えを作ります。</p>
+<p>つまり、頼み方を難しくするのではなく、</p>
+<blockquote>
+<p><strong>自分がすでに知っている条件を伝えてあげる</strong></p>
+</blockquote>
+<p>だけでも回答は変わっていきます。</p>
+<hr>
+<h2>「誰と行くのか」を伝えてみる</h2>
+<p>同じ旅行でも、一人旅と家族旅行ではプランが違います。</p>
+<p>そこで、さらに情報を足します。</p>
+<h3>プロンプト</h3>
+<blockquote>
+<p>埼玉県から車で日帰り旅行をしたいです。<br>大人2人と小学生2人の家族4人です。<br>子どもも楽しめる場所を3つ提案してください。</p>
+</blockquote>
+<p>かなり具体的になってきました。</p>
+<p>ここでは、</p>
+<ul>
+<li>出発地</li>
+<li>移動方法</li>
+<li>日帰り</li>
+<li>大人2人</li>
+<li>小学生2人</li>
+<li>子どもも楽しめる</li>
+<li>3候補</li>
+</ul>
+<p>を伝えています。</p>
+<p>難しい専門用語は一つも使っていません。</p>
+<p><strong>普段、人に旅行の相談をするときとほとんど同じです。</strong></p>
+<hr>
+<h2>自分の希望を追加する</h2>
+<p>さらに、</p>
+<blockquote>
+<p>自然のあるところへ行きたい。</p>
+</blockquote>
+<p>と思ったとします。</p>
+<p>最初から全部書き直す必要はありません。</p>
+<p>ChatGPTとの会話を続けて、</p>
+<h3>追加プロンプト</h3>
+<blockquote>
+<p>この中から、自然を楽しめるところに絞って。</p>
+</blockquote>
+<p>と頼めば大丈夫です。</p>
+<p>さらに、</p>
+<blockquote>
+<p>あまり混雑するところは避けたい。</p>
+</blockquote>
+<blockquote>
+<p>温泉にも入りたい。</p>
+</blockquote>
+<blockquote>
+<p>子どもが身体を動かせる場所がいい。</p>
+</blockquote>
+<p>など、自分の希望を追加していけます。</p>
+<p>これが生成AIの便利なところです。</p>
+<p><strong>一回の質問ですべて決める必要がありません。</strong></p>
+<hr>
+<h2>今度は一日の予定にしてもらう</h2>
+<p>行き先の候補が決まったら、次は具体的な旅行プランにできます。</p>
+<p>たとえば、</p>
+<h3>プロンプト</h3>
+<blockquote>
+<p>ここに行くことにします。<br>朝8時に出発して、夕方6時ごろまでに帰宅したいです。<br>昼食と温泉も含めて、一日の予定を作ってください。</p>
+</blockquote>
+<p>すると、</p>
+<pre><code class="language-text">8:00　自宅を出発
+↓
+10:00　目的地に到着
+↓
+午前　観光
+↓
+12:00　昼食
+↓
+午後　体験・散策
+↓
+15:30　温泉
+↓
+16:30　帰路へ
+↓
+18:00　帰宅
+</code></pre>
+<p>といった形で、予定を組み立ててもらえます。</p>
+<p>もちろん、実際の営業時間、道路状況、料金などは別途確認する必要があります。</p>
+<p>AIに予定の<strong>たたき台</strong>を作ってもらい、最後は自分で確認する使い方です。</p>
+<hr>
+<h2>「もっと○○して」だけでも立派なプロンプト</h2>
+<p>ChatGPTを使うときに便利なのが、短い追加のお願いです。</p>
+<p>たとえば、</p>
+<blockquote>
+<p>もっと簡単に説明して。</p>
+</blockquote>
+<blockquote>
+<p>3つだけに絞って。</p>
+</blockquote>
+<blockquote>
+<p>表にして。</p>
+</blockquote>
+<blockquote>
+<p>初心者向けにして。</p>
+</blockquote>
+<blockquote>
+<p>具体例を入れて。</p>
+</blockquote>
+<blockquote>
+<p>もう少し短くして。</p>
+</blockquote>
+<blockquote>
+<p>メリットとデメリットを分けて。</p>
+</blockquote>
+<p>これらも全部プロンプトです。</p>
+<p>長くて複雑な文章を書く必要はありません。</p>
+<p>AIの回答を見て、</p>
+<p><strong>「ちょっと違うな」</strong></p>
+<p>と思ったところを、そのまま伝えてみてください。</p>
+<hr>
+<h2>「悪いプロンプト」と決めつけなくていい</h2>
+<p>プロンプトについて調べると、</p>
+<p>「悪いプロンプト」</p>
+<p>「良いプロンプト」</p>
+<p>という比較を見かけることがあります。</p>
+<p>もちろん、詳しい情報を伝えた方が目的に合った回答を得やすくなる場合はあります。</p>
+<p>でも、AIを初めて使う人が、</p>
+<blockquote>
+<p>間違った質問をしてはいけない。</p>
+</blockquote>
+<p>と考えてしまうと、使うこと自体が難しくなってしまいます。</p>
+<p>そこで、RETUNE WORKS AI JOURNALでは、</p>
+<p><strong>「悪い・良い」ではなく「情報が少ない・情報を足した」</strong></p>
+<p>と考えます。</p>
+<p>たとえば、</p>
+<h3>最初のプロンプト</h3>
+<blockquote>
+<p>旅行プランを考えて。</p>
+</blockquote>
+<p>↓</p>
+<h3>情報を追加</h3>
+<blockquote>
+<p>埼玉県から車で日帰りできる旅行プランを考えて。</p>
+</blockquote>
+<p>↓</p>
+<h3>さらに追加</h3>
+<blockquote>
+<p>大人2人と小学生2人です。子どもも楽しめる場所を3つ提案して。</p>
+</blockquote>
+<p>↓</p>
+<h3>希望を追加</h3>
+<blockquote>
+<p>自然が多く、温泉にも入れるところに絞って。</p>
+</blockquote>
+<p>↓</p>
+<h3>最後に具体化</h3>
+<blockquote>
+<p>朝8時出発、夕方6時帰宅で、昼食を含めた一日の予定にして。</p>
+</blockquote>
+<p>最初の質問が間違っていたわけではありません。</p>
+<p><strong>会話しながら、自分が欲しい答えへ近づけていっただけです。</strong></p>
+<hr>
+<h2>迷ったら「目的・条件・形」を伝えてみる</h2>
+<p>もう少しだけ使いこなしたくなったら、次の3つを意識すると便利です。</p>
+<h3>1. 目的</h3>
+<p><strong>何をしてほしい？</strong></p>
+<blockquote>
+<p>旅行プランを考えて。</p>
+</blockquote>
+<h3>2. 条件</h3>
+<p><strong>どんな事情や希望がある？</strong></p>
+<blockquote>
+<p>大人2人、小学生2人。車で日帰り。自然が好き。</p>
+</blockquote>
+<h3>3. 答えの形</h3>
+<p><strong>どんな形で答えてほしい？</strong></p>
+<blockquote>
+<p>おすすめを3つ、表で比較して。</p>
+</blockquote>
+<p>まとめると、</p>
+<h3>そのまま使えるプロンプト</h3>
+<blockquote>
+<p>埼玉県から家族で日帰り旅行をしたいです。<br>大人2人、小学生2人で、車で移動します。<br>自然を楽しめて、温泉にも入れる場所を3つ提案してください。<br>それぞれの特徴が分かるように表で比較してください。</p>
+</blockquote>
+<p>これならかなり具体的です。</p>
+<p>でも、<strong>最初からここまで書けなくてもまったく問題ありません。</strong></p>
+<p>「旅行したい」</p>
+<p>から会話を始めて、少しずつ条件を伝えてもいいのです。</p>
+<hr>
+<h2>プロンプトの「型」を覚える前に、まず話しかけてみる</h2>
+<p>生成AIには、より高度なプロンプトの作り方もあります。</p>
+<p>仕事や専門的な用途では、条件、役割、出力形式、参考資料などを細かく指定することもあります。</p>
+<p>でも、AIを初めて使う段階で、それらを全部覚える必要はありません。</p>
+<p>まずは、</p>
+<blockquote>
+<p><strong>やってほしいことを普通の言葉で伝える。</strong></p>
+</blockquote>
+<p>そして答えを見て、</p>
+<blockquote>
+<p><strong>足りないことを追加する。</strong></p>
+</blockquote>
+<p>これだけです。</p>
+<hr>
+<h2>今日試してみる</h2>
+<p>この記事を読み終えたら、何か一つChatGPTに頼んでみてください。</p>
+<p>旅行でなくても構いません。</p>
+<p>たとえば、</p>
+<blockquote>
+<p>今日の夕飯を考えて。</p>
+</blockquote>
+<p>から始めます。</p>
+<p>答えが返ってきたら、</p>
+<blockquote>
+<p>冷蔵庫に豚肉とキャベツがあります。</p>
+</blockquote>
+<p>さらに、</p>
+<blockquote>
+<p>子どもも食べやすいものにして。</p>
+</blockquote>
+<p>さらに、</p>
+<blockquote>
+<p>30分以内で作れるものを3つに絞って。</p>
+</blockquote>
+<p>これだけで、最初の回答とはかなり違ってくるはずです。</p>
+<p><strong>最初から完璧なプロンプトを書くことより、AIと会話しながら自分の希望を伝えること。</strong></p>
+<p>それが、ChatGPTへの「頼み方」の基本です。</p>
+<hr>
+<h2>覚えておきたいこと</h2>
+<blockquote>
+<p><strong>プロンプト ＝ AIへのお願い・指示</strong></p>
+</blockquote>
+<p>そして、</p>
+<blockquote>
+<p><strong>最初から完璧に書かなくていい。</strong></p>
+</blockquote>
+<p>まず頼む。</p>
+<p>答えを見る。</p>
+<p>足りない情報を伝える。</p>
+<p>また答えてもらう。</p>
+<p>生成AIは、この繰り返しから始められます。</p>
+<hr>
+<h3>次に読む</h3>
+<ul>
+<li><strong><a href="/ai/journal/ai-glossary/">生成AIことば辞典</a></strong>：プロンプト、コンテキスト、トークンなどの言葉をやさしく解説</li>
+<li><strong><a href="/ai/journal/first-chatgpt/">ChatGPTって何ができる？</a></strong>：初めて使う人におすすめの5つの使い方</li>
+<li><strong><a href="/ai/journal/improve-chatgpt-answer/">ChatGPTの答えがいまひとつ？ 会話しながら答えを良くする方法</a></strong>：追加のお願いでもっと使いやすくする方法</li>
+</ul>
+<p class="article-back"><a href="/ai/journal/">← AI JOURNAL一覧へ戻る</a></p></div>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-grid"><div><a class="brand" href="/">RETUNE WORKS</a><p>価値を整え、次へつなぐ。</p></div><div><strong>AI</strong><ul class="footer-links"><li><a href="/ai/#learn">学べること</a></li><li><a href="/ai/journal/">Journal</a></li></ul></div><div><strong>INFORMATION</strong><ul class="footer-links"><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="https://x.com/RETUNEWORKS" target="_blank" rel="noopener noreferrer">X</a></li><li><a href="https://www.instagram.com/retuneworks/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="mailto:retuneworks@gmail.com">Email</a></li></ul></div></div><div class="wrap footer-note">© 2026 RETUNE WORKS. Sayama, Saitama.</div></footer>
+</body>
+</html>
