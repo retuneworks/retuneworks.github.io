@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>プログラミング未経験でも作れる？ 生成AIでWebページやアプリを作るという選択肢｜RETUNE WORKS AI JOURNAL</title>
+  <meta name="description" content="プログラミングの経験がなくても、生成AIに「こんなものを作りたい」と伝えながら、Webページや簡単なアプリを形にできる時代になってきました。AIを使ったものづくりの始め方と、初心者が知っておきたい注意点を紹介します。">
+  <link rel="canonical" href="https://retuneworks.github.io/ai/journal/ai-coding-beginners/">
+  <meta property="og:title" content="プログラミング未経験でも作れる？ 生成AIでWebページやアプリを作るという選択肢｜RETUNE WORKS AI JOURNAL">
+  <meta property="og:description" content="プログラミングの経験がなくても、生成AIに「こんなものを作りたい」と伝えながら、Webページや簡単なアプリを形にできる時代になってきました。AIを使ったものづくりの始め方と、初心者が知っておきたい注意点を紹介します。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://retuneworks.github.io/ai/journal/ai-coding-beginners/">
+  <meta property="og:image" content="https://retuneworks.github.io/assets/images/ai-journal/ai-coding-beginners.webp">
+  <link rel="stylesheet" href="../../../assets/css/style.css">
+  <script src="../../../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="/">RETUNE WORKS<small>AI JOURNAL</small></a><button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">メニュー</button><nav class="site-nav" id="main-nav" aria-label="メインナビゲーション"><ul class="nav-list"><li><a href="/">RETUNE WORKS</a></li><li><a href="/instruments/">INSTRUMENTS</a></li><li><a href="/ai/" aria-current="page">AI</a></li><li><a href="/about/">ABOUT</a></li><li><a href="/contact/">CONTACT</a></li></ul></nav></div></header>
+  <main id="main">
+    <article>
+      <header class="article-header"><div class="wrap"><nav class="breadcrumb" aria-label="パンくずリスト"><a href="/ai/">AI</a> / <a href="/ai/journal/">AI JOURNAL</a></nav><p class="article-meta"><span class="tag">生成AIで作る / 仕事とAI</span></p><h1>プログラミング未経験でも作れる？ 生成AIでWebページやアプリを作るという選択肢</h1></div></header>
+      <div class="wrap section article-body"><figure class="article-main-image"><img src="../../../assets/images/ai-journal/ai-coding-beginners.webp" alt="シンプルなWebアプリ画面を表示したノートパソコンで作業する明るい机" width="1440" height="810" decoding="async" fetchpriority="high"></figure><p>これまでの記事では、文章を書く、調べものをする、資料を整理する、Excelについて相談する、仕事の手順をマニュアルにするといった生成AIの使い方を紹介してきました。</p>
+<p>では、</p>
+<blockquote>
+<p><strong>「自分が欲しい道具そのものをAIと一緒に作る」</strong></p>
+</blockquote>
+<p>ことはできるのでしょうか。</p>
+<p>たとえば、</p>
+<blockquote>
+<p>自分のお店の簡単なWebページが欲しい。<br>入力した数字を自動で計算する画面が欲しい。<br>商品を検索できる小さなツールが欲しい。<br>毎日の作業を記録するアプリが欲しい。</p>
+</blockquote>
+<p>以前なら「プログラミングができないから無理」と考えていたかもしれません。</p>
+<p>でも生成AIの登場によって、専門家でなくても、</p>
+<blockquote>
+<p><strong>「こんなものが欲しい」</strong></p>
+</blockquote>
+<p>というところから、Webページや小さなプログラムを形にできる場面が増えてきました。</p>
+<p>今回は、生成AIを「使う」だけでなく、<strong>AIと一緒に作る</strong>という選択肢を見てみましょう。</p>
+<hr>
+<h2>そもそもプログラミングって何？</h2>
+<p>難しく考えなくても大丈夫です。</p>
+<p>コンピューターは、</p>
+<blockquote>
+<p>このボタンを押したら、この計算をする。<br>名前を入力したら、ここに表示する。<br>この条件になったら、メッセージを出す。</p>
+</blockquote>
+<p>といった決められた指示に従って動きます。</p>
+<p>その指示を書くのがプログラミングです。</p>
+<p>これまでは、自分で作ろうと思えば、プログラミング言語を覚え、コードを書き、エラーを調べ、修正する知識や経験が必要でした。</p>
+<p>もちろん、今でも専門的なものを作るには知識が必要です。</p>
+<p>ただ、生成AIによって、この入口が少し変わってきました。</p>
+<hr>
+<h2>「コードを書いて」ではなく「こんなものが欲しい」から始められる</h2>
+<p>たとえば、</p>
+<blockquote>
+<p>商品の販売価格と仕入価格を入力すると、利益を計算する簡単なWebページを作りたい。</p>
+</blockquote>
+<p>とします。</p>
+<p>そこでAIへ、</p>
+<h3>そのまま試せるプロンプト</h3>
+<blockquote>
+<p>プログラミング初心者です。</p>
+<p>「販売価格」と「仕入価格」を入力すると、「利益」を計算して表示する簡単なWebページを作りたいです。</p>
+<p>何が必要なのか、初心者にも分かるように最初から説明してください。</p>
+</blockquote>
+<p>と聞いてみます。</p>
+<p>ここではまだ、HTML、CSS、JavaScriptなどの言葉を知らなくても構いません。</p>
+<p>まず、<strong>やりたいことを日本語で説明する。</strong>ところから始められます。</p>
+<hr>
+<h2>AIはコードの意味も説明してくれる</h2>
+<p>AIがコードを作ってくれても、</p>
+<blockquote>
+<p>何が書いてあるのか全然分からない。</p>
+</blockquote>
+<p>となることがあります。</p>
+<p>その場合は、</p>
+<blockquote>
+<p>このコードが何をしているのか、プログラミングをしたことがない人にも分かるように説明してください。</p>
+</blockquote>
+<p>さらに、</p>
+<blockquote>
+<p>1行ずつ説明してください。<br>今は覚えなくてもいい部分と、理解した方がいい部分を分けてください。</p>
+</blockquote>
+<p>と頼むこともできます。</p>
+<hr>
+<h2>まずは小さなものから作る</h2>
+<p>最初は、</p>
+<p><strong>2つの数字を入力して計算する。</strong></p>
+<p><strong>ボタンを押すと文章を表示する。</strong></p>
+<p><strong>簡単なチェックリストを作る。</strong></p>
+<p><strong>入力した内容を一覧表示する。</strong></p>
+<p>くらいがおすすめです。</p>
+<p>小さければ、何が動いているのか、どこを変更したのかが分かりやすくなります。</p>
+<hr>
+<h2>「もう少しこうしたい」と会話しながら直せる</h2>
+<p>最初に作ったものが完成形である必要はありません。</p>
+<p>たとえば利益計算のページを作ったあと、</p>
+<blockquote>
+<p>仕入価格だけでなく送料も入力できるようにしてください。</p>
+</blockquote>
+<p>次に、</p>
+<blockquote>
+<p>利益率も表示してください。</p>
+</blockquote>
+<p>さらに、</p>
+<blockquote>
+<p>入力欄の名前をもっと分かりやすくしてください。</p>
+</blockquote>
+<p>と続けます。</p>
+<hr>
+<h2>見た目についても普通の言葉で頼める</h2>
+<blockquote>
+<p>ボタンをもう少し大きくしてください。<br>スマートフォンでも見やすくしてください。<br>入力欄を縦に並べてください。<br>説明文を上に追加してください。</p>
+</blockquote>
+<p>といった頼み方ができます。</p>
+<hr>
+<h2>エラーが出てもAIに相談できる</h2>
+<h3>プロンプト</h3>
+<blockquote>
+<p>このコードを実行したところ、ボタンを押しても計算結果が表示されません。</p>
+<p>プログラミング初心者なので、原因の候補と確認するところを順番に教えてください。</p>
+<p>一度に大きく書き直さず、まず問題のある部分を探してください。</p>
+</blockquote>
+<p>エラーメッセージがあるなら、その内容も一緒に伝えます。</p>
+<hr>
+<h2>画面のスクリーンショットを見せる方法もある</h2>
+<p>画像を扱えるAIサービスや機能であれば、画面のスクリーンショットを見せて相談できる場合もあります。</p>
+<p>ただし、画面だけでは原因を特定できない場合があります。</p>
+<p>その場合は、コードやエラーメッセージなどの追加情報も必要になります。</p>
+<hr>
+<h2>AIが作ったコードは「正しい」とは限らない</h2>
+<p>AIがコードを表示すると、完成したように見えます。</p>
+<p>でも、動かないコード、一部だけ間違っているコード、想定していない動きをするコード、安全性に問題のあるコードを作ることもあります。</p>
+<blockquote>
+<p><strong>AIが出したもの＝完成品</strong></p>
+</blockquote>
+<p>ではありません。</p>
+<p>実際に動かして、確認して、直していく必要があります。</p>
+<hr>
+<h2>「動いた」と「安全に使える」は別</h2>
+<p>自分のパソコンで計算機が動いた。それは大きな一歩です。</p>
+<p>でも、<strong>動くこと</strong>と、<strong>他の人が安心して使えること</strong>は同じではありません。</p>
+<p>個人情報、パスワード、お金、決済、顧客データ、外部サービスとの接続などを扱うシステムでは、セキュリティやデータ管理について考える必要があります。</p>
+<p>必要に応じて、専門家による確認も必要になります。</p>
+<hr>
+<h2>最初は「自分だけで使う小さな道具」から</h2>
+<p>初心者が試すなら、<strong>自分のパソコンで、自分だけが使う小さな道具</strong>から始めると分かりやすいでしょう。</p>
+<p>たとえば、</p>
+<p><strong>利益計算</strong></p>
+<p><strong>文字数カウンター</strong></p>
+<p><strong>作業チェックリスト</strong></p>
+<p><strong>簡単な料金計算</strong></p>
+<p><strong>データを並べ替える小さなツール</strong></p>
+<p>などです。</p>
+<hr>
+<h2>Webページを作ることもできる</h2>
+<h3>プロンプト</h3>
+<blockquote>
+<p>小さな事業のサービス紹介ページを作りたいです。</p>
+<p>ページには、</p>
+<p>・サービス名<br>・サービスの説明<br>・できること<br>・料金<br>・問い合わせ案内</p>
+<p>を載せたいです。</p>
+<p>プログラミング初心者でも分かるように、まず必要なものと作る順番を教えてください。</p>
+</blockquote>
+<p>まず構成を相談して、そのあと必要に応じてコードを作ってもらいます。</p>
+<hr>
+<h2>「作る前」に相談するのも大切</h2>
+<p>いきなり「このアプリを作ってください」と頼むより、「こんなことで困っています」から相談した方がよい場合があります。</p>
+<p>もしかすると、アプリを作らなくてもExcelで十分かもしれません。</p>
+<p>AIと一緒に、<strong>本当に作る必要があるのか</strong>から考えることもできます。</p>
+<hr>
+<h2>既存の道具で十分なら、それを使う</h2>
+<p>何でも自分で作ればいいわけではありません。</p>
+<p>すでに便利なサービスがある。</p>
+<p>Excelだけでできる。</p>
+<p>今のやり方で困っていない。</p>
+<p>作った後の管理の方が大変。</p>
+<p>そんな場合は、新しく作らない方がよいこともあります。</p>
+<blockquote>
+<p><strong>作れることと、作るべきことは別。</strong></p>
+</blockquote>
+<hr>
+<h2>「欲しいもの」を言葉にする力が大切になる</h2>
+<p>AIと一緒に作っていると、</p>
+<blockquote>
+<p>何を作りたいのか。<br>誰が使うのか。<br>何を入力するのか。<br>何が表示されればいいのか。<br>どんなときに使うのか。</p>
+</blockquote>
+<p>を考える必要が出てきます。</p>
+<p>つまり、<strong>「自分が欲しいものを説明する」</strong>ことが大切になります。</p>
+<hr>
+<h2>AIに「作る前の設計」を手伝ってもらう</h2>
+<h3>そのまま試せるプロンプト</h3>
+<blockquote>
+<p>私はプログラミング未経験です。</p>
+<p>次のようなものを作りたいです。</p>
+<p>【欲しいものを書く】</p>
+<p>すぐにコードを書かず、まず、</p>
+<p>1.  何のために使うものか<br>2.  誰が使うか<br>3.  何を入力するか<br>4.  何を表示するか<br>5.  最低限必要な機能<br>6.  最初はなくてもよい機能</p>
+<p>を一緒に整理してください。</p>
+<p>難しくしすぎず、初心者が最初に作る小さな形を提案してください。</p>
+</blockquote>
+<hr>
+<h2>最初の完成形を小さくする</h2>
+<p>たとえば「在庫管理ツール」でも、最初は商品名と在庫数を入力して一覧で確認できるだけでも構いません。</p>
+<p>動いたら、在庫が少ない商品を見つける、検索できるようにする、と少しずつ足します。</p>
+<p><strong>小さく作る → 使う → 必要なものを足す</strong></p>
+<p>という進め方です。</p>
+<hr>
+<h2>AIと作るときも「一度に全部頼まない」</h2>
+<p>一度に巨大なシステムを頼むより、まず一つの小さな機能から始めます。</p>
+<p>動いたら次へ進みます。</p>
+<hr>
+<h2>変更する前に元の状態を残しておく</h2>
+<p>AIとコードを直していると、さっきまでは動いていたのに、直したら動かなくなることがあります。</p>
+<p>最初は難しく考えず、</p>
+<blockquote>
+<p><strong>動いているものを消さない。</strong></p>
+</blockquote>
+<p>これだけでも大切です。</p>
+<hr>
+<h2>今日試してみる</h2>
+<p>ChatGPTへ、</p>
+<blockquote>
+<p>私はプログラミングをしたことがありません。</p>
+<p>販売価格と仕入価格を入力すると、利益を表示する簡単なものを作ってみたいです。</p>
+<p>できるだけ簡単な方法で、何を作ればいいか教えてください。</p>
+</blockquote>
+<p>と聞いてみます。</p>
+<p>回答が出たら、</p>
+<blockquote>
+<p>まず一番小さな形にしてください。</p>
+</blockquote>
+<p>と続けます。</p>
+<p>そして、</p>
+<blockquote>
+<p>必要なコードを作ってください。<br>それぞれが何をしているのか初心者向けに説明してください。</p>
+</blockquote>
+<p>と頼みます。</p>
+<hr>
+<h2>覚えておきたいこと</h2>
+<p>生成AIによって、<strong>プログラミングを知らなければ、何も作れない。</strong>という状況は少しずつ変わってきています。</p>
+<p>ただし、<strong>AIがあれば専門知識は一切必要ない</strong>という意味ではありません。</p>
+<p>作るものが大きくなるほど、プログラムの仕組み、セキュリティ、データ管理、バックアップ、運用などの知識も必要になります。</p>
+<p>だから最初は、</p>
+<blockquote>
+<p><strong>自分だけで使う、小さなものを一つ作ってみる。</strong></p>
+</blockquote>
+<p>くらいでいいのです。</p>
+<p>生成AIは、完成品を何でも作ってくれる魔法の道具というより、</p>
+<blockquote>
+<p><strong>分からないことを聞きながら、一緒にものづくりを進められる相手</strong></p>
+</blockquote>
+<p>として使えます。</p>
+<p>そして小さなものを一つ作れると、次にこんな疑問が出てくるかもしれません。</p>
+<blockquote>
+<p><strong>「これ、自分の仕事専用の道具にできないかな？」</strong></p>
+</blockquote>
+<p>次の記事では、そこからもう一歩進んで、<strong>自分の仕事に必要な小さな業務ツールをAIと作る</strong>という考え方を紹介します。</p>
+<hr>
+<h3>次に読む</h3>
+<ul>
+<li><strong><a href="/ai/journal/prompt-basics/">プロンプトは難しくない。ChatGPTへの「頼み方」の基本</a></strong></li>
+<li><strong><a href="/ai/journal/improve-chatgpt-answer/">ChatGPTの答えがいまひとつ？ 会話しながら答えを良くする方法</a></strong></li>
+<li><strong><a href="/ai/journal/ai-excel-basics/">Excelが苦手でもAIに相談できる。表やデータ整理のはじめ方</a></strong></li>
+<li><strong><a href="/ai/journal/find-ai-work-improvements/">「この仕事、AIで楽にできる？」身近な業務から改善ポイントを見つける方法</a></strong></li>
+<li><strong><a href="/ai/journal/ai-business-tool-building/">自分の仕事に必要なツールをAIと作る。小さな業務アプリから始める方法</a></strong></li>
+</ul>
+<p class="article-back"><a href="/ai/journal/">← AI JOURNAL一覧へ戻る</a></p></div>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-grid"><div><a class="brand" href="/">RETUNE WORKS</a><p>価値を整え、次へつなぐ。</p></div><div><strong>AI</strong><ul class="footer-links"><li><a href="/ai/#learn">学べること</a></li><li><a href="/ai/journal/">Journal</a></li></ul></div><div><strong>INFORMATION</strong><ul class="footer-links"><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="https://x.com/RETUNEWORKS" target="_blank" rel="noopener noreferrer">X</a></li><li><a href="https://www.instagram.com/retuneworks/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="mailto:retuneworks@gmail.com">Email</a></li></ul></div></div><div class="wrap footer-note">© 2026 RETUNE WORKS. Sayama, Saitama.</div></footer>
+</body>
+</html>

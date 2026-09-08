@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>会議メモや箇条書きをAIで整理する。議事録づくりの基本｜RETUNE WORKS AI JOURNAL</title>
+  <meta name="description" content="会議中に取った箇条書きのメモやホワイトボードの写真を、生成AIを使って読みやすい議事録に整理する方法を紹介します。決まったこと、担当者、期限、未決事項の整理から、録音・文字起こしを使った方法まで初心者向けに解説します。">
+  <link rel="canonical" href="https://retuneworks.github.io/ai/journal/ai-meeting-minutes/">
+  <meta property="og:title" content="会議メモや箇条書きをAIで整理する。議事録づくりの基本｜RETUNE WORKS AI JOURNAL">
+  <meta property="og:description" content="会議中に取った箇条書きのメモやホワイトボードの写真を、生成AIを使って読みやすい議事録に整理する方法を紹介します。決まったこと、担当者、期限、未決事項の整理から、録音・文字起こしを使った方法まで初心者向けに解説します。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://retuneworks.github.io/ai/journal/ai-meeting-minutes/">
+  <meta property="og:image" content="https://retuneworks.github.io/assets/images/ai-journal/ai-meeting-minutes.webp">
+  <link rel="stylesheet" href="../../../assets/css/style.css">
+  <script src="../../../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="/">RETUNE WORKS<small>AI JOURNAL</small></a><button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">メニュー</button><nav class="site-nav" id="main-nav" aria-label="メインナビゲーション"><ul class="nav-list"><li><a href="/">RETUNE WORKS</a></li><li><a href="/instruments/">INSTRUMENTS</a></li><li><a href="/ai/" aria-current="page">AI</a></li><li><a href="/about/">ABOUT</a></li><li><a href="/contact/">CONTACT</a></li></ul></nav></div></header>
+  <main id="main">
+    <article>
+      <header class="article-header"><div class="wrap"><nav class="breadcrumb" aria-label="パンくずリスト"><a href="/ai/">AI</a> / <a href="/ai/journal/">AI JOURNAL</a></nav><p class="article-meta"><span class="tag">仕事とAI / 生成AIを使ってみる</span></p><h1>会議メモや箇条書きをAIで整理する。議事録づくりの基本</h1></div></header>
+      <div class="wrap section article-body"><figure class="article-main-image"><img src="../../../assets/images/ai-journal/ai-meeting-minutes.webp" alt="明るい会議スペースでノートパソコンと会議メモを囲んで整理する風景" width="1440" height="810" decoding="async" fetchpriority="high"></figure><p>会議が終わったあと、</p>
+<blockquote>
+<p>メモは取ったけれど、これを議事録にするのが大変。</p>
+</blockquote>
+<p>ということはないでしょうか。</p>
+<p>会議中のメモは、</p>
+<blockquote>
+<p>A案で進める<br>田中さん見積確認<br>金曜まで<br>B案どうする？ 次回<br>商品ページ修正必要<br>写真は鈴木さん</p>
+</blockquote>
+<p>のように、本人にしか分からない状態になっていることもあります。</p>
+<p>きれいに書こうとすると、会議の内容を思い出しながら文章を作り直さなければなりません。</p>
+<p>そんなときにも生成AIを使えます。</p>
+<p>ポイントは、</p>
+<blockquote>
+<p><strong>会議中に完璧な議事録を作ろうとしないこと。</strong></p>
+</blockquote>
+<p>まず必要なことをメモする。</p>
+<p>そして会議が終わったら、AIに整理を手伝ってもらう。</p>
+<p>今回は、そんな使い方を試してみましょう。</p>
+<hr>
+<h2>箇条書きのメモから始めてみる</h2>
+<p>まずは難しく考えず、会議中に取ったメモをそのままAIへ渡してみます。</p>
+<p>たとえば、こんなメモです。</p>
+<blockquote>
+<p>新商品の販売について<br>10月から販売開始予定<br>商品写真がまだ<br>写真は鈴木さん担当<br>来週水曜まで<br>価格は4800円で決定<br>梱包方法はまだ決まってない<br>次回確認<br>田中さんが送料調べる</p>
+</blockquote>
+<h3>そのまま試せるプロンプト</h3>
+<blockquote>
+<p>次の会議メモを、読みやすい議事録に整理してください。</p>
+<p>「決まったこと」<br>「担当者」<br>「期限」<br>「未決事項」<br>「次にやること」</p>
+<p>に分けてください。</p>
+<p>メモに書かれていない内容は勝手に追加しないでください。</p>
+<p>【ここに会議メモを貼り付ける】</p>
+</blockquote>
+<p>これだけでも、バラバラだったメモをかなり見やすくできます。</p>
+<hr>
+<h2>「要約」と「議事録」は少し違う</h2>
+<p>議事録では、単に短くするだけでなく、</p>
+<p><strong>誰が担当するのか。</strong></p>
+<p><strong>いつまでなのか。</strong></p>
+<p><strong>何が決まったのか。</strong></p>
+<p><strong>何がまだ決まっていないのか。</strong></p>
+<p>を分けることが大切です。</p>
+<hr>
+<h2>「決まったこと」だけを抜き出してもらう</h2>
+<blockquote>
+<p>この会議メモから「今回決まったこと」だけを抜き出してください。</p>
+</blockquote>
+<p>反対に、</p>
+<blockquote>
+<p>まだ決まっていないことだけを抜き出してください。</p>
+</blockquote>
+<p>と頼むこともできます。</p>
+<hr>
+<h2>「誰が・何を・いつまでに」を整理する</h2>
+<h3>プロンプト</h3>
+<blockquote>
+<p>この会議メモから、作業が必要なものを抜き出して、</p>
+<p>「担当者」<br>「やること」<br>「期限」</p>
+<p>の表にしてください。</p>
+<p>メモに書かれていないものは「不明」としてください。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>担当者</th>
+<th>やること</th>
+<th>期限</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>鈴木さん</td>
+<td>商品写真を撮影</td>
+<td>来週水曜日</td>
+</tr>
+<tr>
+<td>田中さん</td>
+<td>送料を確認</td>
+<td>不明</td>
+</tr>
+</tbody></table>
+<p><strong>分からないものは「不明」にする</strong>と指定することで、不足情報をAIに想像で埋めさせないようにできます。</p>
+<hr>
+<h2>「要確認」の項目を探してもらう</h2>
+<blockquote>
+<p>この議事録を見て、担当者や期限など、仕事を進めるために不足している情報があれば「要確認」として一覧にしてください。</p>
+</blockquote>
+<p>AIを、答えを作るだけでなく、足りない情報を見つけるためにも使えます。</p>
+<hr>
+<h2>長い会議メモも整理できる</h2>
+<blockquote>
+<p>次の会議メモを議事録に整理してください。</p>
+<p>1.  会議の概要<br>2.  話し合ったこと<br>3.  決まったこと<br>4.  未決事項<br>5.  担当者と期限<br>6.  次回までにやること</p>
+<p>内容を勝手に補わず、不明な部分は「要確認」としてください。</p>
+</blockquote>
+<hr>
+<h2>ホワイトボードの写真から整理する方法もある</h2>
+<p>画像を扱えるAIサービスや機能であれば、<strong>ホワイトボードの写真を見せて内容を整理してもらう</strong>こともできます。</p>
+<h3>プロンプト</h3>
+<blockquote>
+<p>このホワイトボードの写真に書かれている内容を整理してください。</p>
+<p>「決まったこと」<br>「アイデア」<br>「担当者」<br>「期限」<br>「未決事項」</p>
+<p>に分けてください。</p>
+<p>読み取れない文字や判断できない部分は、推測せず「読み取り不明」としてください。</p>
+</blockquote>
+<hr>
+<h2>写真と自分のメモを組み合わせてもいい</h2>
+<blockquote>
+<p>ホワイトボードの写真と、私が取った会議メモをもとに議事録を作ってください。</p>
+<p>両方の情報を整理して、</p>
+<p>「決まったこと」<br>「担当者」<br>「期限」<br>「未決事項」<br>「次にやること」</p>
+<p>に分けてください。</p>
+<p>写真とメモの内容が食い違う場合は、勝手に判断せず「要確認」としてください。</p>
+</blockquote>
+<hr>
+<h2>ホワイトボードの写真は「ちゃんと読めているか」を確認する</h2>
+<p>文字が小さい、手書き文字が読みにくい、写真が斜め、光が反射している、端が切れている、文字が薄い、一部が隠れている場合などは、正しく読み取れないことがあります。</p>
+<blockquote>
+<p><strong>写真 → AIで整理 → 元の写真と見比べて確認</strong></p>
+</blockquote>
+<p>という工程を残しておきましょう。</p>
+<hr>
+<h2>一歩進んで「録音 → 文字起こし → AIで整理」</h2>
+<p>大まかな流れは、</p>
+<p><strong>会議を録音する</strong></p>
+<p>↓</p>
+<p><strong>音声を文字にする</strong></p>
+<p>↓</p>
+<p><strong>文字起こしした文章をAIへ渡す</strong></p>
+<p>↓</p>
+<p><strong>AIに議事録として整理してもらう</strong></p>
+<p>↓</p>
+<p><strong>人が内容を確認する</strong></p>
+<p>となります。</p>
+<h3>プロンプト</h3>
+<blockquote>
+<p>次の会議の文字起こしを議事録に整理してください。</p>
+<p>話し言葉や重複は整理して、</p>
+<p>「話し合ったこと」<br>「決まったこと」<br>「未決事項」<br>「担当者」<br>「期限」<br>「次にやること」</p>
+<p>に分けてください。</p>
+<p>内容が分からない部分は推測せず「要確認」としてください。</p>
+</blockquote>
+<hr>
+<h2>文字起こしにも間違いはある</h2>
+<p>文字起こしでは、人の名前、会社名、商品名、専門用語、数字、金額、日付などを間違えることがあります。</p>
+<p>そのため、</p>
+<blockquote>
+<p><strong>録音 → 文字起こし → AIで整理 → 人が確認 → 議事録完成</strong></p>
+</blockquote>
+<p>という流れで考えるのがおすすめです。</p>
+<hr>
+<h2>会議を録音するときは確認も必要</h2>
+<p>会議には個人情報、顧客情報、会社の機密情報、未公開情報などが含まれることがあります。</p>
+<p>録音する場合は、参加者への確認や会社・組織のルールなどを確認しましょう。利用するAIサービスへ会議内容を渡して問題ないかについても同様です。</p>
+<hr>
+<h2>AIは「会議の前」にも使える</h2>
+<blockquote>
+<p>明日の30分の打ち合わせ用に、</p>
+<p>・現在の進捗確認<br>・問題点の確認<br>・次にやる作業の決定</p>
+<p>を話すための簡単なアジェンダを作ってください。</p>
+</blockquote>
+<p>会議の目的や話したい内容を伝えて、<strong>アジェンダやレジュメのたたき台</strong>を作ってもらうこともできます。</p>
+<hr>
+<h2>会議の前・中・後でAIを使ってみる</h2>
+<h3>会議の前</h3>
+<p><strong>目的や話したいこと → アジェンダ・レジュメのたたき台</strong></p>
+<h3>会議の中</h3>
+<p><strong>箇条書きメモ</strong></p>
+<p><strong>ホワイトボード</strong></p>
+<p><strong>必要に応じて録音</strong></p>
+<h3>会議の後</h3>
+<p><strong>メモ → AIで整理</strong></p>
+<p><strong>ホワイトボード写真 → AIで整理</strong></p>
+<p><strong>録音 → 文字起こし → AIで整理</strong></p>
+<p>そして最後に、</p>
+<p><strong>人が確認して議事録を完成させる。</strong></p>
+<hr>
+<h2>仕事を進めるための議事録にする</h2>
+<h3>そのまま試せるプロンプト</h3>
+<blockquote>
+<p>この議事録をもとに、会議が終わったあとに必要な作業だけを抜き出してください。</p>
+<p>「担当者」<br>「やること」<br>「期限」</p>
+<p>のチェックリストにしてください。</p>
+<p>担当者や期限が決まっていない場合は「要確認」としてください。</p>
+</blockquote>
+<p><strong>議事録 → 次にやること</strong>までつなげられます。</p>
+<hr>
+<h2>今日試してみる</h2>
+<blockquote>
+<p>新しいチラシについて<br>デザインAに決定<br>印刷は1000枚<br>金額まだ確認必要<br>田中さん印刷会社に確認<br>来週月曜まで<br>配布開始日は未定<br>鈴木さんが配布場所候補を考える</p>
+</blockquote>
+<p>そして、</p>
+<blockquote>
+<p>この会議メモを、</p>
+<p>「決まったこと」<br>「担当者」<br>「期限」<br>「未決事項」<br>「次にやること」</p>
+<p>に整理してください。</p>
+<p>分からない内容は推測せず「要確認」としてください。</p>
+</blockquote>
+<p>回答が出たら、</p>
+<blockquote>
+<p>次にやることだけチェックリストにしてください。</p>
+</blockquote>
+<p>さらに、</p>
+<blockquote>
+<p>次回の会議で確認することを一覧にしてください。</p>
+</blockquote>
+<p>と聞いてみましょう。</p>
+<hr>
+<h2>覚えておきたいこと</h2>
+<p>AIを使った議事録づくりは、録音設備や特別な仕組みがなければ始められないものではありません。</p>
+<p>まずは、</p>
+<blockquote>
+<p><strong>自分が取った箇条書きのメモをAIに渡してみる。</strong></p>
+</blockquote>
+<p>それだけでも始められます。</p>
+<p>慣れてきたら、長い会議メモ、ホワイトボードの写真、録音した音声の文字起こしなどへ広げていけばいいでしょう。</p>
+<p>大切なのは、<strong>AIに記録を丸投げすることではなく、記録を整理する作業を手伝ってもらうこと。</strong></p>
+<p>そして、</p>
+<p><strong>決まったこと。</strong></p>
+<p><strong>決まっていないこと。</strong></p>
+<p><strong>誰がやるのか。</strong></p>
+<p><strong>いつまでなのか。</strong></p>
+<p><strong>次に何をするのか。</strong></p>
+<p>を分かりやすくすることです。</p>
+<blockquote>
+<p><strong>会議を「話して終わり」にせず、次の行動につなげる。</strong></p>
+</blockquote>
+<p>そのための整理役として、生成AIを使ってみてください。</p>
+<hr>
+<h3>次に読む</h3>
+<ul>
+<li><strong><a href="/ai/journal/ai-summarize-text/">長い文章を読むのが大変。AIで「要約」してもらう方法</a></strong></li>
+<li><strong><a href="/ai/journal/chatgpt-files-images/">PDFや写真をAIに見せると何ができる？ ファイルを使ったChatGPT入門</a></strong></li>
+<li><strong><a href="/ai/journal/chatgpt-task-planning/">ChatGPTで予定と「やること」を整理する。頭の中のごちゃごちゃをAIに渡してみる</a></strong></li>
+<li><strong><a href="/ai/journal/ai-email-writing/">AIでメールを書く。ゼロから悩まず文章を作る方法</a></strong></li>
+<li><strong><a href="/ai/journal/ai-excel-basics/">Excelが苦手でもAIに相談できる。表やデータ整理のはじめ方</a></strong></li>
+</ul>
+<p class="article-back"><a href="/ai/journal/">← AI JOURNAL一覧へ戻る</a></p></div>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-grid"><div><a class="brand" href="/">RETUNE WORKS</a><p>価値を整え、次へつなぐ。</p></div><div><strong>AI</strong><ul class="footer-links"><li><a href="/ai/#learn">学べること</a></li><li><a href="/ai/journal/">Journal</a></li></ul></div><div><strong>INFORMATION</strong><ul class="footer-links"><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="https://x.com/RETUNEWORKS" target="_blank" rel="noopener noreferrer">X</a></li><li><a href="https://www.instagram.com/retuneworks/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="mailto:retuneworks@gmail.com">Email</a></li></ul></div></div><div class="wrap footer-note">© 2026 RETUNE WORKS. Sayama, Saitama.</div></footer>
+</body>
+</html>
