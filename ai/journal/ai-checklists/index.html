@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>チェックリストをAIで作る。抜け漏れを減らす小さな使い方｜RETUNE WORKS AI JOURNAL</title>
+  <meta name="description" content="発送、外出、作業確認などの手順を生成AIでチェックリストに整理する方法を紹介します。項目を増やしすぎず、人が確認するポイントも初心者向けに解説します。">
+  <link rel="canonical" href="https://retuneworks.github.io/ai/journal/ai-checklists/">
+  <meta property="og:title" content="チェックリストをAIで作る。抜け漏れを減らす小さな使い方｜RETUNE WORKS AI JOURNAL">
+  <meta property="og:description" content="発送、外出、作業確認などの手順を生成AIでチェックリストに整理する方法を紹介します。項目を増やしすぎず、人が確認するポイントも初心者向けに解説します。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://retuneworks.github.io/ai/journal/ai-checklists/">
+  <meta property="og:image" content="https://retuneworks.github.io/assets/images/ai-journal/ai-checklists.webp">
+  <link rel="stylesheet" href="../../../assets/css/style.css">
+  <script src="../../../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="/">RETUNE WORKS<small>AI JOURNAL</small></a><button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">メニュー</button><nav class="site-nav" id="main-nav" aria-label="メインナビゲーション"><ul class="nav-list"><li><a href="/">RETUNE WORKS</a></li><li><a href="/instruments/">INSTRUMENTS</a></li><li><a href="/ai/" aria-current="page">AI</a></li><li><a href="/about/">ABOUT</a></li><li><a href="/contact/">CONTACT</a></li></ul></nav></div></header>
+  <main id="main">
+    <article>
+      <header class="article-header"><div class="wrap"><nav class="breadcrumb" aria-label="パンくずリスト"><a href="/ai/">AI</a> / <a href="/ai/journal/">AI JOURNAL</a></nav><p class="article-meta"><span class="tag">仕事とAI / 暮らしとAI</span></p><h1>チェックリストをAIで作る。抜け漏れを減らす小さな使い方</h1></div></header>
+      <div class="wrap section article-body"><figure class="article-main-image"><img src="../../../assets/images/ai-journal/ai-checklists.webp" alt="チェック欄のある紙とノートパソコン、梱包用品を配置した明るい仕事机" width="1440" height="810" decoding="async" fetchpriority="high"></figure><p>毎回やっている作業なのに、</p>
+<blockquote>
+<p>一つだけ忘れた。<br>最後の確認を飛ばした。<br>忙しい日に抜けが出た。</p>
+</blockquote>
+<p>ということがあります。</p>
+<p>そんなときは、AIに仕事を全部任せなくても、<strong>チェックリストを作るだけ</strong>で役立つ場合があります。</p>
+<hr>
+<h2>まず普段の作業をそのまま書く</h2>
+<p>きれいに整理する必要はありません。</p>
+<p>たとえば、</p>
+<blockquote>
+<p>注文を見る<br>商品を確認<br>付属品を見る<br>梱包<br>送り状<br>発送<br>発送連絡</p>
+</blockquote>
+<p>と書きます。</p>
+<h3>プロンプト</h3>
+<blockquote>
+<p>この作業を、実際に使いやすいチェックリストにしてください。<br>順番がおかしいところがあれば候補として示してください。<br>勝手に重要な条件を追加しないでください。</p>
+</blockquote>
+<hr>
+<h2>「作業」と「最終確認」を分ける</h2>
+<p>同じ一覧の中に全部入れるより、</p>
+<p><strong>作業すること</strong></p>
+<p>と、</p>
+<p><strong>最後に確認すること</strong></p>
+<p>を分けると見やすくなる場合があります。</p>
+<blockquote>
+<p>作業手順と、発送直前の最終確認に分けてください。</p>
+</blockquote>
+<p>と頼めます。</p>
+<hr>
+<h2>チェック項目を増やしすぎない</h2>
+<p>AIは親切に項目を増やしてくれることがあります。</p>
+<p>でも、30項目のリストを毎回使うのは大変です。</p>
+<blockquote>
+<p>毎回必ず確認するものだけに絞ってください。<br>10項目以内を目安にしてください。</p>
+</blockquote>
+<p>と条件を付けてもいいでしょう。</p>
+<p><strong>使われない完璧なリストより、毎回使える短いリスト</strong>の方が役に立ちます。</p>
+<hr>
+<h2>「異常があったとき」を別にする</h2>
+<p>通常作業と例外処理は分けた方が分かりやすいことがあります。</p>
+<p>たとえば、</p>
+<blockquote>
+<p>商品に傷を見つけた<br>住所が不完全<br>決済が確認できない</p>
+</blockquote>
+<p>といった場合です。</p>
+<p>AIには、</p>
+<blockquote>
+<p>通常のチェックリストとは別に、「問題があったときに止まって確認する項目」を作ってください。</p>
+</blockquote>
+<p>と頼めます。</p>
+<hr>
+<h2>家庭でも使える</h2>
+<p>チェックリストは仕事だけではありません。</p>
+<ul>
+<li>旅行の持ち物</li>
+<li>学校行事</li>
+<li>防災用品</li>
+<li>車で出かける前</li>
+<li>病院へ行く準備</li>
+<li>引っ越し</li>
+</ul>
+<p>などにも使えます。</p>
+<blockquote>
+<p>小学生の子どもと日帰りで出かけます。<br>忘れ物を減らすため、最低限の持ち物をチェックリストにしてください。</p>
+</blockquote>
+<p>のように相談できます。</p>
+<hr>
+<h2>AIのリストをそのまま正解にしない</h2>
+<p>AIが出したリストに、実際の作業に必要なものが抜けることもあります。</p>
+<p>反対に、不要なものが入ることもあります。</p>
+<p>一度使って、</p>
+<blockquote>
+<p>この項目はいらなかった。<br>ここが抜けていた。</p>
+</blockquote>
+<p>と直していく方が実用的です。</p>
+<hr>
+<h2>今日試してみる</h2>
+<p>最近「うっかり」が起きやすい作業を一つ選んでください。</p>
+<p>そして、</p>
+<blockquote>
+<p>この作業の抜け漏れを減らすため、短いチェックリストにしてください。</p>
+</blockquote>
+<p>と聞いてみましょう。</p>
+<p>AI活用は、大きな自動化だけではありません。</p>
+<p><strong>一枚のチェックリストを作ることも、立派な業務改善です。</strong></p>
+<hr>
+<h3>次に読む</h3>
+<ul>
+<li><strong><a href="/ai/journal/ai-work-manual/">仕事の手順をAIでマニュアルにする。頭の中の作業を見える化する方法</a></strong></li>
+<li><strong><a href="/ai/journal/find-ai-work-improvements/">「この仕事、AIで楽にできる？」身近な業務から改善ポイントを見つける方法</a></strong></li>
+<li><strong>繰り返す文章をAIでテンプレートにする。毎回ゼロから書かない方法</strong></li>
+</ul>
+<p class="article-back"><a href="/ai/journal/">← AI JOURNAL一覧へ戻る</a></p></div>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-grid"><div><a class="brand" href="/">RETUNE WORKS</a><p>価値を整え、次へつなぐ。</p></div><div><strong>AI</strong><ul class="footer-links"><li><a href="/ai/#learn">学べること</a></li><li><a href="/ai/journal/">Journal</a></li></ul></div><div><strong>INFORMATION</strong><ul class="footer-links"><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="https://x.com/RETUNEWORKS" target="_blank" rel="noopener noreferrer">X</a></li><li><a href="https://www.instagram.com/retuneworks/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="mailto:retuneworks@gmail.com">Email</a></li></ul></div></div><div class="wrap footer-note">© 2026 RETUNE WORKS. Sayama, Saitama.</div></footer>
+</body>
+</html>

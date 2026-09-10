@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>選択肢が多いときはAIに整理してもらう。比較表の作り方｜RETUNE WORKS AI JOURNAL</title>
+  <meta name="description" content="商品、サービス、作業方法など複数の選択肢を、生成AIで比較表に整理する方法を紹介します。比較軸の決め方、事実確認、最終判断を人が行うポイントも解説します。">
+  <link rel="canonical" href="https://retuneworks.github.io/ai/journal/ai-compare-options/">
+  <meta property="og:title" content="選択肢が多いときはAIに整理してもらう。比較表の作り方｜RETUNE WORKS AI JOURNAL">
+  <meta property="og:description" content="商品、サービス、作業方法など複数の選択肢を、生成AIで比較表に整理する方法を紹介します。比較軸の決め方、事実確認、最終判断を人が行うポイントも解説します。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://retuneworks.github.io/ai/journal/ai-compare-options/">
+  <meta property="og:image" content="https://retuneworks.github.io/assets/images/ai-journal/ai-compare-options.webp">
+  <link rel="stylesheet" href="../../../assets/css/style.css">
+  <script src="../../../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="/">RETUNE WORKS<small>AI JOURNAL</small></a><button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">メニュー</button><nav class="site-nav" id="main-nav" aria-label="メインナビゲーション"><ul class="nav-list"><li><a href="/">RETUNE WORKS</a></li><li><a href="/instruments/">INSTRUMENTS</a></li><li><a href="/ai/" aria-current="page">AI</a></li><li><a href="/about/">ABOUT</a></li><li><a href="/contact/">CONTACT</a></li></ul></nav></div></header>
+  <main id="main">
+    <article>
+      <header class="article-header"><div class="wrap"><nav class="breadcrumb" aria-label="パンくずリスト"><a href="/ai/">AI</a> / <a href="/ai/journal/">AI JOURNAL</a></nav><p class="article-meta"><span class="tag">暮らしとAI / 生成AIを使ってみる</span></p><h1>選択肢が多いときはAIに整理してもらう。比較表の作り方</h1></div></header>
+      <div class="wrap section article-body"><figure class="article-main-image"><img src="../../../assets/images/ai-journal/ai-compare-options.webp" alt="ノートパソコンと3枚の候補カードを並べて選択肢を比較する明るい仕事机" width="1440" height="810" decoding="async" fetchpriority="high"></figure><p>何かを選ぶとき、候補が増えるほど迷いやすくなります。</p>
+<blockquote>
+<p>Aは安い。<br>Bは機能が多い。<br>Cは使いやすそう。<br>でも結局どれが自分に合うの？</p>
+</blockquote>
+<p>こんなとき、AIに「どれを買えばいい？」と丸投げするより、<strong>比較しやすい形に整理してもらう</strong>使い方があります。</p>
+<hr>
+<h2>まず比較したいものを書く</h2>
+<p>たとえば、小さなネットショップで使う在庫管理サービスを選ぶとします。</p>
+<p>今回は比較方法を説明するため、次の3つの架空サービスを例にします。</p>
+<h3>在庫管理ライト</h3>
+<ul>
+<li>月額980円</li>
+<li>商品登録は500件まで</li>
+<li>基本的な在庫管理</li>
+<li>CSV出力対応</li>
+<li>メールサポートあり</li>
+</ul>
+<h3>在庫管理ビジネス</h3>
+<ul>
+<li>月額2,980円</li>
+<li>商品登録数は無制限</li>
+<li>在庫管理</li>
+<li>売上分析</li>
+<li>複数店舗管理</li>
+<li>CSV出力対応</li>
+<li>チャット・メールサポートあり</li>
+</ul>
+<h3>在庫管理シンプル買い切り</h3>
+<ul>
+<li>買い切り9,800円</li>
+<li>月額料金なし</li>
+<li>商品登録は1,000件まで</li>
+<li>基本的な入出庫管理</li>
+<li>CSV出力対応</li>
+<li>サポートはオンラインマニュアル中心</li>
+</ul>
+<blockquote>
+<p>※上記は比較方法を説明するための架空のサービスです。</p>
+</blockquote>
+<p>この情報をAIへ渡して、</p>
+<blockquote>
+<p>この3つを<br>「料金」<br>「商品登録数」<br>「主な機能」<br>「サポート」<br>「向いている人」<br>の項目で比較表にしてください。</p>
+<p>最後に、それぞれの長所を1つずつ簡潔に整理してください。</p>
+</blockquote>
+<p>と頼んだとします。</p>
+<p>すると、たとえば次のように整理できます。</p>
+<table>
+<thead>
+<tr>
+<th>サービス</th>
+<th>料金</th>
+<th>商品登録数</th>
+<th>主な機能</th>
+<th>サポート</th>
+<th>向いている人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>在庫管理ライト</td>
+<td>月額980円</td>
+<td>500件まで</td>
+<td>基本的な在庫管理、CSV出力</td>
+<td>メール</td>
+<td>商品数が少なく、簡単に始めたい人</td>
+</tr>
+<tr>
+<td>在庫管理ビジネス</td>
+<td>月額2,980円</td>
+<td>無制限</td>
+<td>在庫管理、売上分析、複数店舗管理、CSV出力</td>
+<td>チャット・メール</td>
+<td>商品数が多く、事業を広げたい人</td>
+</tr>
+<tr>
+<td>在庫管理シンプル買い切り</td>
+<td>買い切り9,800円</td>
+<td>1,000件まで</td>
+<td>基本的な入出庫管理、CSV出力</td>
+<td>オンラインマニュアル</td>
+<td>月額料金を避けて長く使いたい人</td>
+</tr>
+</tbody>
+</table>
+<p>こうして表にすると、単純な料金の安さだけでなく、</p>
+<blockquote>
+<p>「自分に必要な機能は何か」</p>
+</blockquote>
+<p>まで見比べやすくなります。</p>
+<p>さらにAIへ、</p>
+<blockquote>
+<p>私は商品数300点ほどの個人事業主です。<br>複数店舗管理や高度な分析は必要ありません。<br>月々の固定費をできるだけ抑えたいです。</p>
+<p>この条件で、それぞれのメリットと注意点を整理してください。</p>
+</blockquote>
+<p>と条件を追加すれば、自分の状況に合わせた比較へ一段進められます。</p>
+<hr>
+<h2>比較する「軸」をAIと考える</h2>
+<p>何を比べればいいか分からない場合もあります。</p>
+<blockquote>
+<p>小さな事業で在庫管理サービスを選びたいです。<br>比較するときに確認した方がよい項目を、重要な順に提案してください。</p>
+</blockquote>
+<p>と相談できます。</p>
+<p>たとえば、</p>
+<ul>
+<li>料金</li>
+<li>必要な機能</li>
+<li>操作の難しさ</li>
+<li>データ出力</li>
+<li>バックアップ</li>
+<li>サポート</li>
+<li>解約時の扱い</li>
+</ul>
+<p>などが候補になるかもしれません。</p>
+<p>必要ない項目は削って構いません。</p>
+<hr>
+<h2>自分にとっての優先順位を伝える</h2>
+<p>同じ商品でも、人によって最適なものは違います。</p>
+<blockquote>
+<p>料金を最優先。<br>高度な機能はいらない。<br>パソコンが苦手なので操作が簡単な方がいい。</p>
+</blockquote>
+<p>のように条件を伝えると、比較しやすくなります。</p>
+<p>AIには、</p>
+<blockquote>
+<p>私の条件に照らして、各候補の長所と注意点を整理してください。<br>最終決定はせず、判断材料だけ出してください。</p>
+</blockquote>
+<p>と頼む方法もあります。</p>
+<hr>
+<h2>「事実」と「評価」を分ける</h2>
+<p>比較ではここが大切です。</p>
+<p>たとえば、</p>
+<p><strong>月額1,000円</strong>は事実ですが、</p>
+<p><strong>安い</strong>は評価です。</p>
+<p>AIが情報を混ぜないように、</p>
+<blockquote>
+<p>「確認できた事実」と「評価・考え方」を分けてください。</p>
+</blockquote>
+<p>と頼むことができます。</p>
+<hr>
+<h2>最新の料金や仕様は公式情報で確認する</h2>
+<p>料金、サービス内容、在庫、制度などは変わります。</p>
+<p>AIの回答に数字が出てきても、そのまま信じず、</p>
+<ul>
+<li>公式サイト</li>
+<li>メーカー</li>
+<li>契約画面</li>
+<li>最新の資料</li>
+</ul>
+<p>で確認します。</p>
+<p>AIは比較の形を作るのは得意でも、情報が最新とは限りません。</p>
+<hr>
+<h2>家族や仕事の相談にも使える</h2>
+<p>比較表は買い物だけではありません。</p>
+<blockquote>
+<p>複数の旅行案<br>作業方法<br>研修候補<br>配送方法<br>スケジュール案</p>
+</blockquote>
+<p>などにも使えます。</p>
+<p>「決めてもらう」のではなく、<strong>見比べやすくしてもらう</strong>と考えると使いやすくなります。</p>
+<hr>
+<h2>今日試してみる</h2>
+<p>今迷っていることを二つか三つ挙げて、</p>
+<blockquote>
+<p>この選択肢を比較しやすい表にしてください。<br>私が判断するために不足している情報も挙げてください。</p>
+</blockquote>
+<p>と聞いてみましょう。</p>
+<p>迷いの原因が「情報が多すぎる」のか「情報が足りない」のかも見えやすくなります。</p>
+<hr>
+<h3>次に読む</h3>
+<ul>
+<li><strong><a href="/ai/journal/ai-research-basics/">AIに調べものを頼むときのコツ。答えを聞くだけにしない使い方</a></strong></li>
+<li><strong><a href="/ai/journal/improve-chatgpt-answer/">ChatGPTの答えがいまひとつ？ 会話しながら答えを良くする方法</a></strong></li>
+<li><strong><a href="/ai/journal/ai-checklists/">チェックリストをAIで作る。抜け漏れを減らす小さな使い方</a></strong></li>
+</ul>
+<p class="article-back"><a href="/ai/journal/">← AI JOURNAL一覧へ戻る</a></p></div>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-grid"><div><a class="brand" href="/">RETUNE WORKS</a><p>価値を整え、次へつなぐ。</p></div><div><strong>AI</strong><ul class="footer-links"><li><a href="/ai/#learn">学べること</a></li><li><a href="/ai/journal/">Journal</a></li></ul></div><div><strong>INFORMATION</strong><ul class="footer-links"><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="https://x.com/RETUNEWORKS" target="_blank" rel="noopener noreferrer">X</a></li><li><a href="https://www.instagram.com/retuneworks/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="mailto:retuneworks@gmail.com">Email</a></li></ul></div></div><div class="wrap footer-note">© 2026 RETUNE WORKS. Sayama, Saitama.</div></footer>
+</body>
+</html>
