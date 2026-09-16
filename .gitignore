@@ -7,6 +7,9 @@
 !/robots.txt
 !/sitemap.xml
 !/README.md
+!/scripts/
+/scripts/*
+!/scripts/generate_sitemap.py
 !/about/
 !/ai/
 !/assets/

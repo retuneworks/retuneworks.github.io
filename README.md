@@ -16,6 +16,8 @@ RETUNE WORKS公式サイトのGitHub Pages向けMVPです。HTML / CSS / Vanilla
 
 ルートディレクトリで「python -m http.server 8000」を実行し、http://localhost:8000/ を開きます。file:// 直開きではルート相対リンクを正しく確認できません。
 
+公開ページを追加・更新・削除したときは、commit前に `python scripts/generate_sitemap.py` を実行し、`sitemap.xml` の差分を確認してください。`python scripts/generate_sitemap.py --check` で更新漏れを検査できます。
+
 ## Publish with GitHub Pages
 
 1. GitHubの retuneworks/retuneworks.github.io リポジトリへ、このフォルダの中身をpushします。
