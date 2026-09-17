@@ -24,6 +24,15 @@ EXCLUDED_DIRS = {
     ".git", ".github", ".openai", "_site", "node_modules", "scripts",
     "test", "tests", "tmp", "temp", "backup", "backups", "draft", "drafts",
 }
+# These pages are published by the separate BOSS project under the same host.
+# Their canonical URLs and indexability were verified on the live pages.
+# No lastmod is emitted because this repository cannot establish their edit dates.
+EXTERNAL_PAGES = (
+    SITE_URL + "boss-serial-decoder/",
+    SITE_URL + "boss-serial-decoder/en/",
+    SITE_URL + "boss-serial-decoder/about.html",
+    SITE_URL + "boss-serial-decoder/en/about.html",
+)
 
 
 class HeadParser(HTMLParser):
@@ -113,6 +122,7 @@ def public_pages():
             lastmod = today
         datetime.date.fromisoformat(lastmod)
         pages.append((url, lastmod))
+    pages.extend((url, None) for url in EXTERNAL_PAGES)
     pages.sort(key=lambda page: (page[0] != SITE_URL, page[0]))
     urls = [url for url, _ in pages]
     if len(urls) != len(set(urls)):
@@ -126,7 +136,8 @@ def sitemap_bytes(pages):
     for url, lastmod in pages:
         item = ET.SubElement(root, "{" + NAMESPACE + "}url")
         ET.SubElement(item, "{" + NAMESPACE + "}loc").text = url
-        ET.SubElement(item, "{" + NAMESPACE + "}lastmod").text = lastmod
+        if lastmod:
+            ET.SubElement(item, "{" + NAMESPACE + "}lastmod").text = lastmod
     def indent(element, level=0):
         # Compatible with Python versions before ElementTree.indent was added.
         space = "\n" + "  " * level
@@ -154,8 +165,10 @@ def validate(content, pages):
         lastmod = item.findtext("{" + NAMESPACE + "}lastmod")
         if not url or not url.startswith(SITE_URL) or "index.html" in url or "404.html" in url:
             raise ValueError("Invalid sitemap URL: " + str(url))
-        if not lastmod or datetime.date.fromisoformat(lastmod).isoformat() != lastmod:
+        if lastmod and datetime.date.fromisoformat(lastmod).isoformat() != lastmod:
             raise ValueError("Invalid lastmod: " + str(lastmod))
+        if not lastmod and url not in EXTERNAL_PAGES:
+            raise ValueError("Missing lastmod: " + url)
         entries.append((url, lastmod))
     if entries != pages:
         raise ValueError("Sitemap entries do not match the published pages")
