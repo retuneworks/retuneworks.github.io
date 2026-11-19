@@ -29,3 +29,35 @@ h1,h2,h3,h4,.article-body h4{font-family:var(--font-ja);font-weight:700}
 body.en h1,body.en h2,body.en h3,body.en h4,.entrance h2{font-family:var(--font-en-serif);font-weight:700}
 .breadcrumb,.footer-note{font-weight:500}
 @media(max-width:800px){body.en h1{font-size:clamp(2.4rem,10vw,2.7rem)}}
+
+/* Buying guide and contact */
+.contact-section{scroll-margin-top:76px;background:var(--paper)}
+.contact-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.contact-card{display:flex;min-width:0;min-height:190px;flex-direction:column;justify-content:space-between;padding:1.5rem;border:1px solid var(--line);background:#fff;text-decoration:none;transition:transform .2s ease,box-shadow .2s ease}
+.contact-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.contact-card strong{margin:.8rem 0;font-size:clamp(1rem,1.4vw,1.2rem);overflow-wrap:anywhere}
+.contact-card>span:last-child{color:var(--muted);font-size:.9rem}
+.contact-card-primary{border-top:4px solid var(--brass)}
+.contact-card-phone{background:transparent}
+.buy-hero{background:linear-gradient(135deg,#fffdf8,#e8ddcc)}
+.buy-hero-copy{max-width:960px}
+.buy-hero h1{font-size:clamp(2.5rem,6vw,5.4rem)}
+.buying-categories .card{border-top:4px solid var(--brass)}
+.buying-categories h3{min-height:3.4rem}
+.buying-categories+.notice{margin-top:2rem}
+.feature-list{counter-reset:buy-feature;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;margin:0;padding:1px;list-style:none;background:#4a4037}
+.feature-list li{counter-increment:buy-feature;padding:clamp(1.5rem,4vw,3rem);background:#17100c}
+.feature-list li:before{content:"0" counter(buy-feature);display:block;margin-bottom:.8rem;color:var(--brass);font:700 .8rem/1 var(--font-ui);letter-spacing:.14em}
+.feature-list h3{color:#fff8e9}
+.feature-list p{margin-bottom:0;color:#d8cebe}
+.buying-process li{min-width:0}
+.buying-process h3{font-size:1.15rem}
+.section-soft{background:var(--paper)}
+.buy-info-grid{align-items:start}
+.check-list{margin:0}
+.privacy-note{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--line);font-weight:700}
+.buy-contact{background:linear-gradient(135deg,#fffdf8,#eee4d4)}
+.small-link{margin-top:.8rem;font-size:.85rem;color:var(--muted);overflow-wrap:anywhere}
+@media(max-width:1000px){.contact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:800px){.feature-list{grid-template-columns:1fr}.buying-categories h3{min-height:0}}
+@media(max-width:520px){.contact-grid{grid-template-columns:1fr}.contact-card{min-height:150px}.buy-hero h1 br{display:none}}

@@ -6,11 +6,13 @@ RETUNE WORKS公式サイトのGitHub Pages向けMVPです。HTML / CSS / Vanilla
 
 - / — ブランドの玄関
 - /instruments/ — 海外向け楽器・機材事業（英語）
+- /buy/ — 中古品・ヴィンテージ品の買取案内
 - /instruments/journal/ — 楽器記事カテゴリー
 - /ai/ — 国内・地域向け生成AI活動（日本語）
 - /ai/journal/ — AI記事カテゴリー
 - /about/ — ブランド思想
-- /contact/ — 問い合わせ案内
+- /#contact — メール・SNS・電話の問い合わせ窓口
+- /contact/ — 既存URL向けの問い合わせ窓口案内
 
 ## Local preview
 
@@ -27,7 +29,6 @@ RETUNE WORKS公式サイトのGitHub Pages向けMVPです。HTML / CSS / Vanilla
 
 ## Before launch
 
-- contact/index.html のTODOを公式メールアドレスへ置き換える
 - 実機でモバイル表示と各外部リンクを最終確認する
 - 必要に応じて記事を追加する
 
